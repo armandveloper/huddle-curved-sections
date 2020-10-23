@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- displays site properly based on user's device -->
-
+		<meta name="description" content="Huddle Landing page" />
 		<link
 			rel="icon"
 			type="image/png"
@@ -56,7 +56,7 @@
 						connections with your users as you engage in genuine
 						discussion.
 					</p>
-					<a href="#" class="btn btn--primary btn--rounded"
+					<a href="#" class="btn btn--primary btn--rounded shadow"
 						>Get started for free</a
 					>
 					<img
@@ -92,12 +92,28 @@
 			</div>
 		</section>
 		<section class="feature hidden">
-			<img src="img/bg-section-top-mobile-1.svg" alt="" class="wave" />
-			<img
-				src="img/bg-section-bottom-mobile-1.svg"
-				alt=""
-				class="wave wave--bottom"
-			/>
+			<picture>
+				<source
+					srcset="img/bg-section-top-desktop-1.svg"
+					media="(min-width: 992px)"
+				/>
+				<img
+					src="img/bg-section-top-mobile-1.svg"
+					alt=""
+					class="wave"
+				/>
+			</picture>
+			<picture>
+				<source
+					srcset="img/bg-section-bottom-desktop-1.svg"
+					media="(min-width: 992px)"
+				/>
+				<img
+					src="img/bg-section-bottom-mobile-1.svg"
+					alt=""
+					class="wave wave--bottom"
+				/>
+			</picture>
 			<div class="wrapper">
 				<div class="feature__grid">
 					<img
@@ -105,7 +121,7 @@
 						alt=""
 						class="feature__img"
 					/>
-					<div class="feature__content">
+					<div class="feature__content first">
 						<h3 class="feature__title">Grow Together</h3>
 						<p class="feature__text">
 							Generate meaningful discussions with your audience
@@ -137,12 +153,28 @@
 			</div>
 		</section>
 		<section class="feature hidden">
-			<img src="img/bg-section-top-mobile-2.svg" alt="" class="wave" />
-			<img
-				src="img/bg-section-bottom-mobile-2.svg"
-				alt=""
-				class="wave wave--bottom"
-			/>
+			<picture>
+				<source
+					srcset="img/bg-section-top-desktop-2.svg"
+					media="(min-width: 992px)"
+				/>
+				<img
+					src="img/bg-section-top-mobile-2.svg"
+					alt=""
+					class="wave"
+				/>
+			</picture>
+			<picture>
+				<source
+					srcset="img/bg-section-bottom-desktop-2.svg"
+					media="(min-width: 992px)"
+				/>
+				<img
+					src="img/bg-section-bottom-mobile-2.svg"
+					alt=""
+					class="wave wave--bottom"
+				/>
+			</picture>
 			<div class="wrapper">
 				<div class="feature__grid">
 					<img
@@ -150,7 +182,7 @@
 						alt=""
 						class="feature__img"
 					/>
-					<div class="feature__content">
+					<div class="feature__content first">
 						<h3 class="feature__title">Your Users</h3>
 						<p class="feature__text">
 							It takes no time at all to integrate Huddle with
@@ -166,14 +198,20 @@
 			<div class="wrapper">
 				<div class="get-started__content">
 					<h3 class="heading__3">Ready To Build Your Community?</h3>
-					<a href="#" class="btn btn--primary btn--rounded"
+					<a href="#" class="btn btn--primary btn--rounded shadow"
 						>Get Started For Free</a
 					>
 				</div>
 			</div>
 		</section>
 		<footer class="footer">
-			<img src="img/bg-footer-top-mobile.svg" alt="" class="wave" />
+			<picture>
+				<source
+					srcset="img/bg-footer-top-desktop.svg"
+					media="(min-width: 992px)"
+				/>
+				<img src="img/bg-footer-top-mobile.svg" alt="" class="wave" />
+			</picture>
 			<div class="wrapper">
 				<div class="footer__grid">
 					<div class="newsletter">
@@ -193,7 +231,7 @@
 							<button class="btn btn--primary">Subscribe</button>
 						</form>
 					</div>
-					<div class="footer__contact">
+					<div class="footer__contact first">
 						<a
 							href="/"
 							class="footer__logo-box"
