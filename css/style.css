@@ -1,0 +1,241 @@
+:root {
+	--color-primary: hsl(322, 100%, 66%);
+	--color-primary-alt: hsl(322, 100%, 46%);
+	--very-dark-cyan: hsl(192, 100%, 9%);
+	--very-pale-blue: hsl(207, 100%, 98%);
+	--wrapper-padding: 2rem;
+}
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	font-family: 'Open Sans', system-ui, sans-serif;
+	font-size: 1.6rem;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Poppins', system-ui, sans-serif;
+	font-weight: 700;
+}
+.wrapper {
+	max-width: calc(117rem + var(--wrapper-padding) * 2);
+	margin: 0 auto;
+	padding: 0 var(--wrapper-padding);
+}
+.header__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 0;
+}
+.logo {
+	width: 12rem;
+}
+.btn {
+	border: none;
+	background: none;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.8rem;
+	font-weight: 600;
+	padding: 1.5rem 4rem;
+	text-align: center;
+	text-transform: capitalize;
+	transition: all 0.3s;
+}
+.btn--rounded {
+	border-radius: 3rem;
+}
+.btn--rounded:hover {
+	background-color: var(--color-primary);
+	color: #fff;
+}
+.btn--transparent {
+	border: 1px solid var(--color-primary);
+	color: var(--color-primary);
+}
+.btn--primary {
+	background-color: var(--color-primary);
+}
+.btn--primary:hover {
+	background-color: var(--color-primary-alt);
+}
+.btn--small {
+	font-size: 1.6rem;
+	font-weight: 400;
+	padding: 0.6rem 2.5rem;
+}
+.hero {
+	padding: 10rem 0;
+}
+.hero__inner {
+	text-align: center;
+}
+.heading__1 {
+	font-size: 2.6rem;
+	text-align: center;
+	margin-top: 0;
+}
+.hero__text {
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 2.5rem 0 6rem;
+}
+.hero__img {
+	display: block;
+	margin-top: 10rem;
+	width: 100%;
+}
+.results__grid {
+	display: grid;
+	gap: 10rem;
+}
+.result__item {
+	margin: 0 auto;
+	width: 20rem;
+}
+.result__heading {
+	font-size: 5rem;
+	margin: 0;
+}
+.result__text {
+	font-size: 1.8rem;
+	text-align: center;
+	text-transform: capitalize;
+	margin: 0;
+	opacity: 0.65;
+}
+.feature {
+	background-color: var(--very-pale-blue);
+	margin-top: 14rem;
+	padding: 8rem 0;
+	position: relative;
+}
+.feature--white {
+	background-color: #fff;
+}
+.feature .wave {
+	position: absolute;
+	bottom: 99%;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.feature .wave--bottom {
+	top: 99%;
+}
+.feature__title {
+	font-size: 2.4rem;
+	margin-top: 6rem;
+	text-align: center;
+}
+.feature__text {
+	font-size: 1.5rem;
+	line-height: 1.7;
+	text-align: center;
+}
+.get-started {
+	margin: 15rem 0 8rem;
+}
+.get-started__content {
+	text-align: center;
+}
+.heading__3 {
+	font-size: 2.5rem;
+	margin: 0 0 4rem;
+}
+.footer {
+	background: #00252e;
+	color: #fff;
+	margin-top: 20rem;
+	padding: 5rem 0;
+	position: relative;
+}
+.footer .wave {
+	position: absolute;
+	bottom: 99%;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.newsletter {
+	margin-bottom: 10rem;
+}
+.newsletter__title {
+	font-size: 1.9rem;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.footer__text {
+	font-size: 1.6rem;
+	line-height: 2;
+	margin: 2rem 0 0;
+}
+.newsletter__form {
+	margin-top: 4rem;
+	text-align: right;
+}
+.input {
+	border: 2px solid transparent;
+	border-radius: 5px;
+	display: block;
+	font-family: inherit;
+	font-size: 1.6rem;
+	margin-bottom: 2rem;
+	padding: 1.5rem 2.5rem;
+	width: 100%;
+}
+.input:focus {
+	outline: none;
+	border-color: var(--color-primary-alt);
+}
+.contact__ways {
+	margin: 4rem 0;
+}
+.contact__way {
+	font-size: 1.6rem;
+	line-height: 4;
+	margin: 0;
+	padding-left: 4rem;
+	background-size: 2.5rem;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.contact__way:first-child {
+	background-image: url(../img/icon-phone.svg);
+}
+.contact__way:last-child {
+	background-image: url(../img/icon-email.svg);
+}
+.social__nav {
+	display: flex;
+	align-items: center;
+}
+.social__link {
+	color: #fff;
+	font-size: 4rem;
+}
+.social__link:not(:last-child) {
+	margin-right: 3rem;
+}
+/* .hidden {
+	display: none;
+} */
